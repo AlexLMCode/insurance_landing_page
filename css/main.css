@@ -5,6 +5,7 @@
 	--dark-button-background-color: hsl(270, 9%, 17%);
 	--dark-font-color: hsl(273, 4%, 51%);
 	--light-font-color: hsl(0, 0%, 98%);
+	--footer-color: hsl(0, 0%, 98%);
 }
 
 * {
@@ -28,6 +29,10 @@ a {
 	font-weight: 700;
 	color: var(--dark-font-color);
 	text-decoration: none;
+}
+
+.button {
+	cursor: pointer;
 }
 
 /*HEADER (NAV)*/
@@ -183,7 +188,7 @@ div.hero-button button {
 }
 
 .benefits-title-container {
-	height: 13rem;
+	height: 15rem;
 	display: flex;
 	align-items: center;
 }
@@ -212,11 +217,121 @@ div.hero-button button {
 .benefit-article span {
 	font-family: 'DM Serif Display';
 	margin-bottom: 1rem;
+	font-size: 25px;
 }
 
 .benefit-article p {
 	font-family: 'Karla', sans-serif;
 	color: var(--dark-font-color);
+}
+
+/*PURPLE BIG CARD*/
+
+.purple-card-container {
+	margin-top: 12%;
+	background-color: var(--card-background-color);
+	height: 16rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-right: 7%;
+	padding-left: 7%;
+	position: relative;
+}
+
+.purple-card-container p {
+	font-family: 'DM Serif Display';
+	font-size: 55px;
+	color: white;
+}
+
+.card-button {
+	height: 40px;
+	width: 130px;
+	background: transparent;
+	border: 1px solid white;
+	position: initial;
+	z-index: 3;
+}
+
+.card-button a {
+	color: white;
+}
+
+.card-decorative-image {
+	position: absolute;
+	left: 63.8%;
+	top: 1%;
+	z-index: 2;
+}
+
+/*FOOTER*/
+
+footer {
+	margin-top: 10%;
+	background-color: var(--footer-color);
+	position: relative;
+}
+
+.footer-container {
+	position: inherit;
+	z-index: 4;
+}
+
+.firts-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 1rem;
+	height: 6rem;
+	border-bottom: 1px solid var(--dark-font-color);
+	margin-bottom: 3rem;
+}
+
+.icons-container {
+	width: 15rem;
+}
+.socialmedia-icons {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.socialmedia-icons li {
+	list-style: none;
+}
+
+.second-row {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	padding-bottom: 5%;
+}
+
+.footer-article-title {
+	margin-bottom: 2rem;
+	color: var(--dark-font-color);
+	font-weight: 700;
+	font-family: 'Karla', sans-serif;
+}
+
+.article-list {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.article-list li {
+	list-style: none;
+	margin-top: 1rem;
+}
+
+.article-list li a {
+	color: var(--card-background-color);
+}
+
+.footer-image {
+	position: absolute;
+	top: 0;
+	z-index: 3;
 }
 
 /*ATRIBBUTION*/
