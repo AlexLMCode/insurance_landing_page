@@ -1,0 +1,166 @@
+/*COLORS VARIABLES*/
+:root {
+	--card-background-color: hsl(256, 26%, 20%);
+	--icons-social-background-color: hsl(216, 30%, 68%);
+	--dark-button-background-color: hsl(270, 9%, 17%);
+	--dark-font-color: hsl(273, 4%, 51%);
+	--light-font-color: hsl(0, 0%, 98%);
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-size: 16px;
+}
+
+.container {
+	max-width: 1300px;
+	margin: 0 auto;
+}
+
+a {
+	font-family: 'Karla', sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: var(--dark-font-color);
+	text-decoration: none;
+}
+
+/*HEADER (NAV)*/
+
+header {
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	background-color: white;
+}
+
+nav {
+	height: 70px;
+}
+
+.nav-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-list-container {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 40%;
+}
+
+.nav-list-container li {
+	list-style: none;
+}
+
+.nav-button {
+	height: 40px;
+	width: 130px;
+	background: transparent;
+	border: 1px solid var(--dark-button-background-color);
+}
+
+.nav-button a {
+	color: var(--card-background-color);
+}
+
+/*HERO*/
+
+.hero-background {
+	background-color: var(--card-background-color);
+	height: 610px;
+	width: 100%;
+	position: relative;
+}
+
+.hero-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-template-areas:
+		'letter image'
+		'button image';
+	padding: 6%;
+}
+
+.hero-letter {
+	grid-area: letter;
+}
+
+.hero-button {
+	grid-area: button;
+}
+
+.hero-image-container {
+	grid-area: image;
+}
+
+.hero-letter {
+	margin-top: 3rem;
+}
+
+.hero-letter h3 {
+	font-size: 70px;
+	font-family: 'DM Serif Display';
+	color: var(--light-font-color);
+	font-weight: lighter;
+	line-height: 4rem;
+}
+
+div.hero-letter p {
+	margin-top: 2rem;
+	font-family: 'Karla', sans-serif;
+	color: var(--light-font-color);
+	font-weight: 400;
+}
+
+div.hero-button button {
+	height: 40px;
+	width: 130px;
+	background: transparent;
+	border: 1px solid var(--light-font-color);
+}
+
+.hero-button button a {
+	color: var(--light-font-color);
+}
+
+/*DECORATION IMAGES*/
+
+.decoration-top-image img {
+	height: 500px;
+}
+
+.decoration-top-image {
+	position: absolute;
+	z-index: 2;
+	left: 74%;
+	top: 0;
+}
+
+.decoration-bottom-image img {
+	height: 500px;
+}
+
+.decoration-bottom-image {
+	position: absolute;
+	z-index: 2;
+	top: 70%;
+}
+
+/*ATRIBBUTION*/
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
