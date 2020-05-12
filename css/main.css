@@ -90,6 +90,15 @@ nav {
 	padding: 6%;
 }
 
+.hero-container::before {
+	content: '';
+	height: 1px;
+	width: 100px;
+	background-color: aliceblue;
+	display: block;
+	position: absolute;
+}
+
 .hero-letter {
 	grid-area: letter;
 }
