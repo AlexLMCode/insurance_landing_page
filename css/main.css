@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-	max-width: 1300px;
+	max-width: 1200px;
 	margin: 0 auto;
 }
 
@@ -87,7 +87,7 @@ nav {
 	grid-template-areas:
 		'letter image'
 		'button image';
-	padding: 6%;
+	padding-top: 6%;
 }
 
 .hero-container::before {
@@ -109,6 +109,9 @@ nav {
 
 .hero-image-container {
 	grid-area: image;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .hero-letter {
@@ -162,6 +165,58 @@ div.hero-button button {
 	position: absolute;
 	z-index: 2;
 	top: 70%;
+}
+
+/*BENEFITS*/
+
+.benefits-container {
+	margin-top: 20%;
+}
+
+.benefits-container::before {
+	content: '';
+	height: 1px;
+	width: 100px;
+	background-color: var(--dark-font-color);
+	display: block;
+	position: absolute;
+}
+
+.benefits-title-container {
+	height: 13rem;
+	display: flex;
+	align-items: center;
+}
+
+.benefits-title-container p {
+	font-family: 'DM Serif Display';
+	font-size: 70px;
+}
+
+.benefits {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1rem;
+}
+
+.benefit-article {
+	display: flex;
+	flex-direction: column;
+}
+
+.benefit-article img {
+	width: fit-content;
+	margin-bottom: 1rem;
+}
+
+.benefit-article span {
+	font-family: 'DM Serif Display';
+	margin-bottom: 1rem;
+}
+
+.benefit-article p {
+	font-family: 'Karla', sans-serif;
+	color: var(--dark-font-color);
 }
 
 /*ATRIBBUTION*/
