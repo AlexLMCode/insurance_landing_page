@@ -32,7 +32,59 @@ a {
 }
 
 .button {
+	font-family: 'Karla', sans-serif;
+	font-weight: 700;
+	position: relative;
+	z-index: 4;
+	display: block;
+	outline: 0;
+	overflow: hidden;
+	background: none;
+	transition: 0.08s ease-in;
+	-o-transition: 0.08s ease-in;
+	-ms-transition: 0.08s ease-in;
+	-moz-transition: 0.08s ease-in;
+	-webkit-transition: 0.08s ease-in;
 	cursor: pointer;
+}
+
+/*NAV BUTTON*/
+.nav-button.button::before {
+	content: '';
+	position: absolute;
+	background: var(--card-background-color);
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 100%;
+	z-index: -1;
+	-webkit-transition: top 0.09s ease-in;
+}
+
+.nav-button.button:hover {
+	color: white;
+}
+
+/*OTHER BUTTONS*/
+
+.hero-button .button::before {
+	content: '';
+	position: absolute;
+	background: white;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 100%;
+	z-index: -1;
+	-webkit-transition: top 0.09s ease-in;
+}
+
+.hero-button .button:hover {
+	color: var(--card-background-color);
+}
+
+.button:hover::before {
+	top: 0;
 }
 
 /*HEADER (NAV)*/
@@ -72,7 +124,9 @@ nav {
 	border: 1px solid var(--dark-button-background-color);
 }
 
-.nav-button a {
+.nav-button {
+	font-family: 'Karla', sans-serif;
+	font-weight: 700;
 	color: var(--card-background-color);
 }
 
@@ -110,6 +164,10 @@ nav {
 
 .hero-button {
 	grid-area: button;
+}
+
+.hero-button .button {
+	color: var(--light-font-color);
 }
 
 .hero-image-container {
@@ -210,7 +268,7 @@ div.hero-button button {
 }
 
 .benefit-article img {
-	width: fit-content;
+	width: max-content;
 	margin-bottom: 1rem;
 }
 
@@ -248,21 +306,37 @@ div.hero-button button {
 .card-button {
 	height: 40px;
 	width: 130px;
-	background: transparent;
 	border: 1px solid white;
-	position: initial;
-	z-index: 3;
+	/* position: initial; */
+	/* z-index: 3; */
+	color: white;
 }
 
-.card-button a {
-	color: white;
+.card-button.button::before {
+	content: '';
+	position: absolute;
+	background: white;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 100%;
+	z-index: -1;
+	-webkit-transition: top 0.09s ease-in;
+}
+
+.card-button.button:hover {
+	color: var(--card-background-color);
+}
+
+.button:hover::before {
+	top: 0;
 }
 
 .card-decorative-image {
 	position: absolute;
 	left: 63.8%;
 	top: 1%;
-	z-index: 2;
+	z-index: 1;
 }
 
 /*FOOTER*/
@@ -304,6 +378,7 @@ footer {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	padding-bottom: 5%;
+	justify-items: center;
 }
 
 .footer-article-title {
