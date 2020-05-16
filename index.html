@@ -4,12 +4,6 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link
-			rel="icon"
-			type="image/png"
-			sizes="32x32"
-			href="./assets/images/favicon-32x32.png"
-		/>
-		<link
 			href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"
 			rel="stylesheet"
 		/>
@@ -18,127 +12,142 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="./css/main.css" />
-		<title>Frontend Mentor | Insure landing page</title>
+		<link
+			rel="shortcut icon"
+			href="./assets/images/favicon-32x32.png"
+			type="image/x-icon"
+		/>
+		<title>INSURE</title>
 	</head>
 	<body>
 		<header>
-			<nav class="nav-container container">
-				<figure class="logo-image-container">
+			<nav class="header--container container">
+				<div>
 					<img src="./assets/images/logo.svg" alt="logo image" />
-				</figure>
-				<ul class="nav-list-container">
-					<li>
-						<a href="#">how we work</a>
-					</li>
-					<li>
-						<a href="#">blog</a>
-					</li>
-					<li>
-						<a href="#">account</a>
-					</li>
-					<li>
-						<button class="nav-button button">
-							VIEW PLANS
-						</button>
-					</li>
+				</div>
+				<div class="hamburger--menu">
+					<img src="./assets/images/icon-hamburger.svg" alt="hamburger menu" />
+				</div>
+				<ul class="navigation">
+					<li><a href="#">HOW WE WORK</a></li>
+					<li><a href="#">BLOG</a></li>
+					<li><a href="$">ACCOUNT</a></li>
+					<button class="button">VIEW PLANS</button>
 				</ul>
 			</nav>
 		</header>
-		<div class="hero-background">
-			<div class="decoration-top-image">
-				<img src="./assets/images/bg-pattern-intro-right-desktop.svg" alt="" />
-			</div>
-			<section class="hero-container container">
-				<div class="hero-letter">
-					<h3>Humanizing <br />your insurance.</h3>
+		<section class="hero--image">
+			<figure class="hero--image--container"></figure>
+		</section>
+		<section class="hero--letter">
+			<img
+				class="decoration-desktop-image"
+				src="./assets/images/bg-pattern-intro-right-desktop.svg"
+				alt=""
+			/>
+			<div class="hero--letter--grid container">
+				<img
+					class="hero--top--image decoration-image"
+					src="./assets/images/bg-pattern-intro-left-mobile.svg"
+					alt=""
+				/>
+				<img
+					class="hero--desktop--image"
+					src="./assets/images/image-intro-desktop.jpg"
+					alt=""
+				/>
+				<article class="hero--letter--container container">
 					<p>
+						Humanizing <br />
+						your insurance.
+					</p>
+					<span>
 						Get your life insurance coverage easier and faster. We blend our
 						expertise and technology to help you find the plan that’s right for
-						you. Ensure you <br />and your loved ones are protected.
-					</p>
-				</div>
-				<div class="hero-button">
-					<button class="button">
-						VIEW PLANS
-					</button>
-				</div>
-				<figure class="hero-image-container">
-					<img
-						src="./assets/images/image-intro-desktop.jpg"
-						alt="family image"
-					/>
-				</figure>
-			</section>
-			<div class="decoration-bottom-image">
+						you. Ensure you and your loved ones are protected.
+					</span>
+					<button class="button">VIEW PLANS</button>
+				</article>
 				<img
-					src="./assets/images/bg-pattern-intro-left-desktop.svg"
-					alt="cecotarion image"
+					class="hero--bottom--image decoration-image"
+					src="./assets/images/bg-pattern-intro-right-mobile.svg"
+					alt=""
 				/>
 			</div>
-		</div>
-		<section class="benefits-container container">
-			<div class="benefits-title-container">
-				<p>We're different</p>
-			</div>
-			<div class="benefits">
-				<article class="benefit-article">
-					<img
-						src="./assets/images/icon-snappy-process.svg"
-						alt="snappy process"
-					/>
-					<span>Snappy Process</span>
-					<p>
-						Our application process can be completed in minutes, not hours.
-						Don’t get stuck filling in tedious forms.
-					</p>
-				</article>
-				<article class="benefit-article">
-					<img
-						src="./assets/images/icon-affordable-prices.svg"
-						alt="snappy process"
-					/>
-					<span>Affordable Prices</span>
-					<p>
-						We don’t want you worrying about high monthly costs. Our prices may
-						be low, but we still offer the best coverage possible.
-					</p>
-				</article>
-				<article class="benefit-article">
-					<img
-						src="./assets/images/icon-people-first.svg"
-						alt="snappy process"
-					/>
-					<span>People First</span>
-					<p>
-						Our plans aren’t full of conditions and clauses to prevent payouts.
-						We make sure you’re covered when you need it.
-					</p>
-				</article>
-			</div>
+			<img
+				class="decoration-desktop-image-bottom"
+				src="./assets/images/bg-pattern-intro-left-desktop.svg"
+				alt=""
+			/>
 		</section>
-		<section class="purple-card-container container">
+		<div class="divider container">
+			<p>We're different</p>
+		</div>
+		<section class="benefits--container container">
+			<article class="benefit-article">
+				<img src="./assets/images/icon-snappy-process.svg" alt="article" />
+				<span>
+					Snappy Process
+				</span>
+				<p>
+					Our application process can be completed in minutes, not hours. Don’t
+					get stuck filling in tedious forms.
+				</p>
+			</article>
+			<article class="benefit-article">
+				<img src="./assets/images/icon-affordable-prices.svg" alt="article" />
+				<span>
+					Affordable Prices
+				</span>
+				<p>
+					We don’t want you worrying about high monthly costs. Our prices may be
+					low, but we still offer the best coverage possible
+				</p>
+			</article>
+			<article class="benefit-article">
+				<img src="./assets/images/icon-people-first.svg" alt="article" />
+				<span>
+					People First
+				</span>
+				<p>
+					Our plans aren’t full of conditions and clauses to prevent payouts. We
+					make sure you’re covered when you need it.
+				</p>
+			</article>
+		</section>
+		<section class="bottom--card container">
+			<img
+				class="decoration-image"
+				src="./assets/images/bg-pattern-how-we-work-mobile.svg"
+				alt=""
+			/>
+			<img
+				class="decoration-desktop-image"
+				src="./assets/images/bg-pattern-how-we-work-desktop.svg"
+				alt=""
+			/>
 			<p>
 				Find out more <br />
 				about how we work
 			</p>
-			<button class="card-button button">
-				HOW WE WORK
-			</button>
-			<figure class="card-decorative-image">
-				<img
-					src="./assets/images/bg-pattern-how-we-work-desktop.svg"
-					alt="decoration-bottom-image"
-				/>
-			</figure>
+			<button class="button">HOW WE WORK</button>
 		</section>
-		<footer class="footer">
-			<section class="footer-container container">
-				<div class="firts-row">
-					<div>
-						<img src="./assets/images/logo.svg" alt="logo image" />
-					</div>
-					<div class="icons-container">
-						<ul class="socialmedia-icons">
+		<footer>
+			<img
+				class="footer--image decoration-image"
+				src="./assets/images/bg-pattern-footer-mobile.svg"
+				alt=""
+			/>
+			<img
+				class="decoration-desktop-image"
+				src="./assets/images/bg-pattern-footer-desktop.svg"
+				alt=""
+			/>
+			<section class="footer--container container">
+				<div class="footer--firtsrow">
+					<img src="./assets/images/logo.svg" alt="" />
+					<div class="socialmedia--icons--container">
+						<ul class="socialmedia--icons">
 							<li>
 								<img src="./assets/images/icon-facebook.svg" alt="" />
 							</li>
@@ -154,99 +163,43 @@
 						</ul>
 					</div>
 				</div>
-				<div class="second-row">
+				<div class="footer--secondrow">
 					<div>
-						<p class="footer-article-title">OUR COMPANY</p>
-						<ul class="article-list">
-							<li>
-								<a href="#">How we work</a>
-							</li>
-							<li>
-								<a href="#">
-									Why Insure?
-								</a>
-							</li>
-							<li>
-								<a href="#"> View plans </a>
-							</li>
-							<li>
-								<a href="#">
-									REVIEWS
-								</a>
-							</li>
+						<span>OUR COMPANY</span>
+						<ul>
+							<li>HOW WE WORK</li>
+							<li>WHY INSURE?</li>
+							<li>CHECK PRICE</li>
+							<li>REVIEWS</li>
 						</ul>
 					</div>
 					<div>
-						<p class="footer-article-title">HELP ME</p>
-						<ul class="article-list">
-							<li>
-								<a href="#">FAQ</a>
-							</li>
-							<li>
-								<a href="#">TERMS OF USE</a>
-							</li>
-							<li>
-								<a href="#">
-									privacy policity
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									cookies
-								</a>
-							</li>
+						<span>HELP ME</span>
+						<ul>
+							<li>FAQ</li>
+							<li>TERMS OF USE</li>
+							<li>PRIVACY POLICY</li>
+							<li>COOKIES</li>
 						</ul>
 					</div>
 					<div>
-						<p class="footer-article-title">CONTACT</p>
-						<ul class="article-list">
-							<li>
-								<a href="#">
-									SALES
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									SUPPORT
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									live chat
-								</a>
-							</li>
+						<span>CONTACT</span>
+						<ul>
+							<li>SALES</li>
+							<li>SUPPORT</li>
+							<li>LIVE CHAT</li>
 						</ul>
 					</div>
 					<div>
-						<p class="footer-article-title">OTHERS</p>
-						<ul class="article-list">
-							<li>
-								<a href="">CAREERS</a>
-							</li>
-							<li>
-								<a href="#">
-									Press
-								</a>
-							</li>
-							<li>
-								<a href="#">LICENSES</a>
-							</li>
+						<span>OTHERS</span>
+						<ul>
+							<li>CAREERS</li>
+							<li>PRESS</li>
+							<li>LICENSES</li>
 						</ul>
 					</div>
 				</div>
 			</section>
-			<figure class="footer-image">
-				<img
-					src="./assets/images/bg-pattern-footer-desktop.svg"
-					alt="decoration-bottom-image"
-				/>
-			</figure>
 		</footer>
-		<div class="attribution">
-			Challenge by
-			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-				>Frontend Mentor</a
-			>. Coded by <a href="https://github.com/AlexLMCode">Alex Merino</a>.
-		</div>
 	</body>
 </html>
